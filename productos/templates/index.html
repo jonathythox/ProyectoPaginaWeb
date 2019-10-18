@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Smartshop</h1>
+
+  <p>Bienevnida <em>Smartshop</em>, Pagina de prueba </p>
+
+
+<h2>Doggos - Anuel AA - Piolin</h2>
+<p>Imagenes!! </p>
+
+<div>
+{% load static %}
+<img src="{% static 'images/1.png' %}" alt="My image" style="width:555px;height:540px;"/>
+<img src="{% static 'images/2.png' %}" alt="My image" style="width:555px;height:540px;"/>
+<img src="{% static 'images/3.jpg' %}" alt="My image" style="width:555px;height:540px;"/>
+</div>  
+
+<h2>Dynamic content</h2>
+
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Telefonos</strong> {{ num_Telefonos	}}</li>
+    <li><strong>Instancias</strong> {{ num_instances }}</li>
+    <li><strong>Disponible</strong> {{ num_instances_available }}</li>
+  </ul>
+
+{% endblock %}
